@@ -23,6 +23,7 @@ import { cssInterop } from 'nativewind';
 //   }
 // });
 
+// Using https://www.nativewind.dev/v4/api/css-interop as a guide.
 export default function RootEntry() {
   const { top } = useSafeAreaInsets();
 
