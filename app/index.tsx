@@ -14,14 +14,14 @@ import { cssInterop } from 'nativewind';
 // });
 
 // Attepmpt #2
-// cssInterop(Skeleton, {
-//   heightClassName: {
-//     target: 'height', // don't pass this as a prop
-//     nativeStyleToProp: {
-//       height: true // extract `height` from heightClassName and pass it to the `height` prop
-//     }
-//   }
-// });
+cssInterop(Skeleton, {
+  heightClassName: {
+    target: false, // don't pass this as a prop
+    nativeStyleToProp: {
+      height: true // extract `height` from heightClassName and pass it to the `height` prop
+    }
+  }
+});
 
 // Using https://www.nativewind.dev/v4/api/css-interop as a guide.
 export default function RootEntry() {
